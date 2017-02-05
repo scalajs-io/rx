@@ -16,7 +16,7 @@ lazy val root = (project in file(".")).
   enablePlugins(ScalaJSPlugin).
   settings(
     name := "rx",
-    organization := "io.scalajs",
+    organization := "io.scalajs.npm",
     description := "Rx.js API bindings for Scala.js",
     version := apiVersion,
     scalaVersion := scalaJsVersion,
