@@ -1,23 +1,22 @@
 import org.scalajs.sbtplugin.ScalaJSPlugin
 import org.scalajs.sbtplugin.ScalaJSPlugin.autoImport._
 import sbt.Keys.{libraryDependencies, _}
-import sbt.Project.projectToRef
 import sbt._
 
 import scala.language.postfixOps
 
-val apiVersion = "0.3.0.3"
-val scalaJsIOVersion = "0.3.0.3"
+val apiVersion = "4.1.0"
+val scalaJsIOVersion = "0.3.0.4"
 val scalaJsVersion = "2.12.1"
 
-homepage := Some(url("https://github.com/scalajs.io/rxjs"))
+homepage := Some(url("https://github.com/scalajs.io/rx"))
 
 lazy val root = (project in file(".")).
   enablePlugins(ScalaJSPlugin).
   settings(
     name := "rx",
     organization := "io.scalajs.npm",
-    description := "Rx.js API bindings for Scala.js",
+    description := "Library for composing asynchronous and event-based operations in JavaScript",
     version := apiVersion,
     scalaVersion := scalaJsVersion,
     scalacOptions ++= Seq("-deprecation", "-unchecked", "-feature", "-language:implicitConversions", "-Xlint"),
@@ -25,10 +24,10 @@ lazy val root = (project in file(".")).
     autoCompilerPlugins := true,
     scalaJSModuleKind := ModuleKind.CommonJSModule,
     libraryDependencies ++= Seq(
-	    "org.scala-lang" % "scala-reflect" % scalaJsVersion,
-	    "org.scalatest" %%% "scalatest" % "3.0.1" % "test",
-	    "io.scalajs.npm" %%% "transducers" % scalaJsIOVersion
-  ))
+      "org.scala-lang" % "scala-reflect" % scalaJsVersion,
+      "org.scalatest" %%% "scalatest" % "3.0.1" % "test",
+      "io.scalajs.npm" %%% "transducers-js" % "0.4.174"
+    ))
 
 /////////////////////////////////////////////////////////////////////////////////
 //      Publishing

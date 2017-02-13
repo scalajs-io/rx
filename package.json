@@ -1,6 +1,6 @@
 {
   "name": "scalajs-io",
-  "version": "7.4.0",
+  "version": "4.1.0",
   "private": true,
   "dependencies": {
     "rx": "^4.1.0",
