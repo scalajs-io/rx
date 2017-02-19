@@ -3,7 +3,7 @@ package io.scalajs.npm.rx
 import io.scalajs.npm.rx.ObservableTest._
 import io.scalajs.npm.transducers.TransducersJs
 import io.scalajs.util.JSONHelper._
-import io.scalajs.util.ScalaJsHelper._
+import io.scalajs.util.PromiseHelper._
 import org.scalatest.FunSpec
 
 import scala.scalajs.concurrent.JSExecutionContext.Implicits.queue
