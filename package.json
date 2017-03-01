@@ -1,6 +1,6 @@
 {
-  "name": "scalajs-io",
-  "version": "4.1.0",
+  "name": "rx-sjs",
+  "version": "4.1.0-2",
   "private": true,
   "dependencies": {
     "rx": "^4.1.0",
