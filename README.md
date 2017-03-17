@@ -36,7 +36,7 @@ Rx.Observable.range(0, 5).filterWith(_ % 2 == 0).drainFuture map { values =>
 To add the `Rx` binding to your project, add the following to your build.sbt:  
 
 ```sbt
-libraryDependencies += "io.scalajs.npm" %%% "rx" % "4.1.0-2"
+libraryDependencies += "io.scalajs.npm" %%% "rx" % "4.1.0-3"
 ```
 
 Optionally, you may add the Sonatype Repository resolver:
