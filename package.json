@@ -1,6 +1,6 @@
 {
   "name": "rx-sjs",
-  "version": "4.1.0-4",
+  "version": "0.4.0-pre1",
   "private": true,
   "dependencies": {
     "rx": "^4.1.0",
