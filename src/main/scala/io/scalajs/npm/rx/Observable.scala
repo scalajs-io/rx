@@ -2,7 +2,7 @@ package io.scalajs.npm.rx
 
 import io.scalajs.collection.Iterator
 
-import scala.concurrent.Promise
+import scala.concurrent.{Future, Promise}
 import scala.scalajs.js
 import scala.scalajs.js.|
 import scala.scalajs.runtime._
@@ -1079,7 +1079,7 @@ object Observable {
       * @return the promised array
       */
     @inline
-    def drainFuture: Promise[js.Array[A]] = {
+    def drainFuture: Future[js.Array[A]] = {
       val promise = Promise[js.Array[A]]()
       val list    = js.Array[A]()
       val subscription = observable.forEachWith(
@@ -1094,7 +1094,7 @@ object Observable {
         }
       )
       subscription.dispose()
-      promise
+      promise.future
     }
 
     /**

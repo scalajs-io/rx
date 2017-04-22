@@ -1,7 +1,7 @@
 package io.scalajs.npm.rx
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.{JSImport, JSName}
+import scala.scalajs.js.annotation.{JSGlobal, JSImport, JSName}
 
 /**
   * The Reactive Extensions for JavaScript's main functionality is in the main RxJS file
