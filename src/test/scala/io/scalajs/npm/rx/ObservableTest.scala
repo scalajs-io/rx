@@ -8,7 +8,7 @@ import org.scalatest.FunSpec
 
 import scala.scalajs.concurrent.JSExecutionContext.Implicits.queue
 import scala.scalajs.js
-import scala.scalajs.js.annotation.ScalaJSDefined
+
 
 /**
   * Observable Tests
@@ -87,7 +87,7 @@ class ObservableTest extends FunSpec {
   */
 object ObservableTest {
 
-  @ScalaJSDefined
+
   class Data(val outer: Int, val inner: Int, val outerIdx: Int, val innerIdx: Int) extends js.Object
 
 }
